@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="s24BodyGray" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cbd5e1" />
+      <stop offset="50%" stop-color="#94a3b8" />
+      <stop offset="100%" stop-color="#64748b" />
+    </linearGradient>
+    <linearGradient id="s24FrameGray" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#94a3b8" />
+      <stop offset="50%" stop-color="#64748b" />
+      <stop offset="100%" stop-color="#475569" />
+    </linearGradient>
+    <filter id="s24ShadowGray" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#334155" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <g filter="url(#s24ShadowGray)">
+    <!-- Boxier Ultra Frame -->
+    <rect x="90" y="28" width="220" height="434" rx="14" fill="url(#s24FrameGray)" />
+    <!-- Back Matte Glass -->
+    <rect x="93" y="31" width="214" height="428" rx="12" fill="url(#s24BodyGray)" />
+  </g>
+
+  <!-- Left Camera Column (3 lenses) -->
+  <!-- Top: Ultra Wide -->
+  <circle cx="130" cy="72" r="16" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2" />
+  <circle cx="130" cy="72" r="12" fill="#1e293b" />
+  <circle cx="127" cy="69" r="4" fill="#38bdf8" opacity="0.4" />
+
+  <!-- Middle: Main 200MP -->
+  <circle cx="130" cy="116" r="16" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2" />
+  <circle cx="130" cy="116" r="12" fill="#1e293b" />
+  <circle cx="127" cy="113" r="4" fill="#38bdf8" opacity="0.4" />
+
+  <!-- Bottom: 50MP Periscope -->
+  <circle cx="130" cy="160" r="16" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2" />
+  <circle cx="130" cy="160" r="12" fill="#1e293b" />
+  <rect x="124" y="154" width="12" height="12" rx="2" fill="#0f172a" stroke="#64748b" stroke-width="1" />
+
+  <!-- Right Mini Column: Laser AF, Flash, Telephoto -->
+  <circle cx="166" cy="72" r="8" fill="#475569" stroke="#64748b" stroke-width="1.5" />
+  <circle cx="166" cy="72" r="4" fill="#ef4444" opacity="0.8" />
+
+  <circle cx="166" cy="102" r="6" fill="#fef08a" stroke="#eab308" stroke-width="1" />
+
+  <circle cx="166" cy="132" r="12" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2" />
+  <circle cx="166" cy="132" r="8" fill="#1e293b" />
+
+  <!-- Samsung Subtle Logo -->
+  <text x="200" y="380" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" letter-spacing="4" fill="#334155">SAMSUNG</text>
+
+  <!-- Variant Pill Badge -->
+  <rect x="130" y="420" width="140" height="24" rx="12" fill="#f1f5f9" stroke="#94a3b8" />
+  <text x="200" y="436" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#1e293b">TITANIUM GRAY</text>
+</svg>
