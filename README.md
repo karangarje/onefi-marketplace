@@ -5,6 +5,11 @@ Built with **Next.js 16**, **React 19**, **Tailwind CSS v4**, **Prisma**, and **
 
 ---
 
+## 🔗 Project Links
+
+- **Live Demo:** https://onefi-marketplace-kn8p.vercel.app/
+- **GitHub Repository:** https://github.com/karangarje/onefi-marketplace
+
 ## Project Overview
 
 1Fi Marketplace demonstrates a complete full-stack web application where:
@@ -294,7 +299,7 @@ DATABASE_URL="postgresql://user:password@endpoint.neon.tech/onefi_marketplace?ss
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-username>/onefi-marketplace.git
+git clone https://github.com/karangarje/onefi-marketplace.git
 cd onefi-marketplace
 
 # 2. Install dependencies
@@ -465,18 +470,19 @@ All URLs dynamically load product information from PostgreSQL through Prisma and
 
 ---
 
-## Manual Test Flow
+### Production Test Flow
 
-1. Open http://localhost:3000 — Home page directing to Shop
-2. Click **Shop** -> **1Fi Marketplace** -> **Explore Products**
-3. Select **Samsung Galaxy S24 Ultra** — URL: `/products/samsung-galaxy-s24-ultra`
-4. Select **Titanium Black** and **256GB** — image and pricing dynamically update from DB variant
-5. Select a **3-Month EMI plan** (0% interest, ₹2,000 cashback)
-6. Click **Proceed with EMI** — confirmation modal opens
-7. Modal shows dynamic product, variant, selling price, MRP, tenure, monthly payment, cashback, and effective price (₹1,22,999)
-8. Click **Proceed with Plan** — confirmation view with full summary details
-9. Test `/products/iphone-17-pro` and `/products/oneplus-13`
-10. Open `/products/does-not-exist` — verify clean 404
+1. Open https://onefi-marketplace-kn8p.vercel.app/
+2. Click Shop → 1Fi Marketplace
+3. Open Products
+4. Select Samsung Galaxy S24 Ultra
+5. Select color and storage
+6. Select an EMI plan
+7. Click Proceed with EMI
+8. Verify the confirmation modal
+9. Test iPhone 17 Pro
+10. Test OnePlus 13
+11. Test an invalid product URL and verify the 404 page
 
 ### API Testing
 
@@ -502,13 +508,25 @@ npm run build
 npm run start
 ```
 
+## 🚀 Deployment
+
+### Live Demo
+
+**Vercel:** https://onefi-marketplace-kn8p.vercel.app/
+
 ### Vercel Deployment
 
-1. Push repo to GitHub
-2. Import at vercel.com
-3. Set `DATABASE_URL` in Vercel Environment Variables (e.g. hosted PostgreSQL from Neon, Supabase, AWS RDS, etc.)
-4. Set Build Command: `npx prisma generate && next build`
-5. Deploy
+The application is deployed on Vercel and connected to the GitHub repository.
+
+- Framework: Next.js
+- Hosting: Vercel
+- Database: PostgreSQL
+- ORM: Prisma
+- Repository: https://github.com/karangarje/onefi-marketplace
+
+Production URL:
+
+https://onefi-marketplace-kn8p.vercel.app/
 
 ---
 
@@ -519,7 +537,7 @@ git init
 git add .
 git commit -m "feat: 1Fi Marketplace SDE intern assignment"
 git branch -M main
-git remote add origin https://github.com/<your-username>/onefi-marketplace.git
+git remote add origin https://github.com/karangarje/onefi-marketplace.git
 git push -u origin main
 ```
 
