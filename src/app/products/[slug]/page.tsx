@@ -34,13 +34,21 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export async function generateStaticParams() {
-  const products = await prisma.product.findMany({
-    select: { slug: true },
-  });
+  try {
+    const products = await prisma.product.findMany({
+      select: { slug: true },
+    });
 
-  return products.map((product) => ({
-    slug: product.slug,
-  }));
+    return products.map((product) => ({
+      slug: product.slug,
+    }));
+  } catch {
+    return [
+      { slug: 'iphone-17-pro' },
+      { slug: 'samsung-galaxy-s24-ultra' },
+      { slug: 'oneplus-13' },
+    ];
+  }
 }
 
 async function getProduct(slug: string) {
